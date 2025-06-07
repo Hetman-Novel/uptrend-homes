@@ -1454,6 +1454,75 @@ a {
   max-width: 100%;
 }
 
+.header__blockForm {
+  background-color: #fff;
+  left: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: fixed;
+  right: 0;
+  transition: 0.3s ease 0s;
+  top: 115px;
+  z-index: 105;
+}
+
+.header__blockForm:not(.show) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header__blockForm.show {
+  top: 102px;
+}
+
+.header__blockForm .elementor-search-form__container {
+  display: flex;
+  height: 42px;
+}
+
+.header__blockForm form {
+  height: 100%;
+}
+
+.header__blockForm form input {
+  border: none;
+  height: 100%;
+  outline: none;
+}
+
+.header__blockForm form input[type=search] {
+  background-color: #f7f7f7;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: calc(100% - 112px);
+}
+
+.header__blockForm form input[type=search]::-moz-placeholder {
+  color: #8E90A0;
+}
+
+.header__blockForm form input[type=search]::placeholder {
+  color: #8E90A0;
+}
+
+.header__blockForm form button[type=submit] {
+  align-items: center;
+  background-color: #00b6da;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  min-width: 100px;
+  margin-left: 12px;
+  padding: 5px 12px 4px;
+  text-align: center;
+}
+
+.header__blockForm form .fas.fa-search {
+  display: none;
+}
+
 .header .select,
 .language {
   margin-left: 20px;
@@ -3829,6 +3898,18 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
     display: none;
   }
 
+  .header__blockForm {
+    bottom: 110px;
+    bottom: 110px;
+    top: auto;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+
+  .header__blockForm.show {
+    top: auto;
+  }
+
   .language {
     margin-left: 6px;
   }
@@ -4365,6 +4446,14 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
     margin-left: 0;
   }
 
+  .header__blockForm form input[type=search] {
+    width: calc(100% - 105px);
+  }
+
+  .header__blockForm form button[type=submit] {
+    margin-left: 5px;
+  }
+
   .first-screen h1 {
     font-size: 40px;
     line-height: 111%;
@@ -4662,5 +4751,11 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
 
   .header__social {
     margin-bottom: 5px;
+  }
+
+  .header__blockForm {
+    bottom: 0;
+    padding-bottom: 25px;
+    padding-top: 20px;
   }
 }
