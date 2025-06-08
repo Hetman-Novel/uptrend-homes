@@ -7,11 +7,11 @@
    <!--<link rel="icon" type="image/png" sizes="48x48" href="images/favicon/favicon-48x48.png">
    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">-->
-   <link rel="stylesheet" href="files/tabs/style.css?_v=20250607191244">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250607191244">
-   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20250607191244">
-   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20250607191244">
-   <link rel="stylesheet" href="css/style.min.css?_v=20250607191244">
+   <link rel="stylesheet" href="files/tabs/style.css?_v=20250608164258">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250608164258">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20250608164258">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20250608164258">
+   <link rel="stylesheet" href="css/style.min.css?_v=20250608164258">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>A house by the sea - closer than it seems - UPTREND HOMES</title>
 </head>
@@ -254,7 +254,165 @@
 				</picture>
 			</section>
 
-
+			<div class="block-search-form">
+				<div class="n_container">
+					<div class="tabs">
+						<!--
+							* клас block-switching забороняє взаємодіяти з перемиканням вкладок.
+							* Просто прибери клас якщо вкладки знадобляться
+						-->
+						<div class="tabs__wrap-tab block-switching"><!-- block-switching -->
+							<div data-tab="turkey" class="tab tab-active">Turkey</div>
+							<div data-tab="cyprus" class="tab">Cyprus</div>
+						</div>
+						<div data-tabcontent="turkey" class="tabContent content-active">
+							<form class="search-form">
+								<div class="search-form__content">
+									<div class="search-form__column type">
+										<label>Type</label>
+										<div class="wrap-field wrap-radio">
+											<label>
+												<input type="radio" name="type" class="sale" checked>
+												<span>Sale</span>
+											</label>
+											<label>
+												<input type="radio" name="type" class="rent">
+												<span>Rent</span>
+											</label>
+										</div>
+									</div>
+									<div class="search-form__column select">
+										<label>Property type</label>
+										<div class="wrap-field js-wrap-select-form wrap-select">
+											<select id="search-property-type">
+												<option value="" selected disabled>All</option>
+												<option value="value1">value 1</option>
+												<option value="value2">value 2</option>
+												<option value="value3">value 3</option>
+												<option value="value3">value 4</option>
+											</select>
+										</div>
+									</div>
+									<div class="search-form__column select">
+										<label>City</label>
+										<div class="wrap-field js-wrap-select-form wrap-select">
+											<select id="search-city">
+												<option value="" selected disabled>All</option>
+												<option value="value1">value 1</option>
+												<option value="value2">value 2</option>
+												<option value="value3">value 3</option>
+												<option value="value3">value 4</option>
+											</select>
+										</div>
+									</div>
+									<div class="search-form__column select">
+										<label>District</label>
+										<div class="wrap-field js-wrap-select-form wrap-select">
+											<select id="search-district">
+												<option value="" selected disabled>All</option>
+												<option value="value1">value 1</option>
+												<option value="value2">value 2</option>
+												<option value="value3">value 3</option>
+												<option value="value3">value 4</option>
+											</select>
+										</div>
+									</div>
+									<div class="search-form__column select">
+										<label>Rooms</label>
+										<div class="wrap-field js-wrap-select-form wrap-select">
+											<select id="search-rooms">
+												<option value="" selected disabled>All</option>
+												<option value="value1">value 1</option>
+												<option value="value2">value 2</option>
+												<option value="value3">value 3</option>
+												<option value="value3">value 4</option>
+											</select>
+										</div>
+									</div>
+									<div class="search-form__column select price">
+										<label>Price EUR</label>
+										<div class="wrap-field price">
+											<input type="number" placeholder="From">
+											<span></span>
+											<input type="number" placeholder="To"> 
+										</div>
+									</div>
+									<div class="search-form__column id">
+										<label>ID</label>
+										<div class="wrap-field">
+											<input type="number" placeholder="All">
+										</div>
+									</div>
+									<div class="search-form__column js-wrap-select-form select price extended-field">
+										<label>Square</label>
+										<div class="wrap-field price">
+											<input type="number" placeholder="From">
+											<span></span>
+											<input type="number" placeholder="To"> 
+										</div>
+									</div>
+									<div class="search-form__column select price extended-field">
+										<label>Floor</label>
+										<div class="wrap-field price">
+											<input type="number" placeholder="From">
+											<span></span>
+											<input type="number" placeholder="To"> 
+										</div>
+									</div>
+									<div class="search-form__column select price extended-field">
+										<label>Year of construction</label>
+										<div class="wrap-field price">
+											<input type="number" placeholder="From">
+											<span></span>
+											<input type="number" placeholder="To"> 
+										</div>
+									</div>
+									<div class="search-form__column select price extended-field">
+										<label>To the sea</label>
+										<div class="wrap-field price">
+											<input type="number" placeholder="From">
+											<span></span>
+											<input type="number" placeholder="To"> 
+										</div>
+									</div>
+									<div class="search-form__column select extended-field">
+										<label>Infrustucture</label>
+										<div class="wrap-field js-wrap-select-form wrap-select">
+											<select id="search-infrustucture">
+												<option value="" selected disabled>All</option>
+												<option value="value1">value 1</option>
+												<option value="value2">value 2</option>
+												<option value="value3">value 3</option>
+												<option value="value3">value 4</option>
+											</select>
+										</div>
+									</div>
+									<div class="search-form__column select extended-field">
+										<label>Advantages</label>
+										<div class="wrap-field js-wrap-select-form wrap-select">
+											<select id="search-advantages">
+												<option value="" selected disabled>All</option>
+												<option value="value1">value 1</option>
+												<option value="value2">value 2</option>
+												<option value="value3">value 3</option>
+												<option value="value3">value 4</option>
+											</select>
+										</div>
+									</div>
+									<button type="submit" class="search-form__submit">SEARCH</button>
+								</div>
+							</form>
+							<button type="button" class="advanced-search-button">
+								<span id="advanced-search" class="advanced">Advanced search</span>
+								<span id="simple-search" class="simple">Simple search</span>
+							</button>
+						</div>
+						<div data-tabcontent="cyprus" class="tabContent">
+							Cyprus tab content
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<section class="most-popular">
 				<div class="n_container">
@@ -1279,91 +1437,93 @@
 
 			<section class="section-blog">
 				<div class="n_container">
-					<div class="tabs__wrap-tab">
-						<div data-tab="latest-blog" class="tab tab-active"><span>Latest</span> Blog</div>
-						<div data-tab="previous-blog" class="tab"><span>Previous</span> blog</div>
-					</div>
-					<div data-tabcontent="latest-blog" class="tabContent content-active">
-						<div class="section-blog__previewPosts">
-							<div class="section-blog__previewPost">
-								<div class="previewPost-blockImage">
-									<img src="images/preview-post-image.png" alt="">
-								</div>
-								<div class="previewPost-blockInfo">
-									<h2>Uptrend Homes'u Neden Seçiyorlar? Alanya'daki emlak sektöründe güvendiğiniz partner.</h2>
-									<p>Alanya'da emlak arayışı söz konusu olduğunda, akla gelen ilk isim “Uptrend Homes”dur.</p>
-									<div class="previewPost-blockInfoBottom">
-										<p>21.02.2025</p>
-										<a href="#">Read full story</a>
+					<div class="tabs">
+						<div class="tabs__wrap-tab">
+							<div data-tab="latest-blog" class="tab tab-active"><span>Latest</span> Blog</div>
+							<div data-tab="previous-blog" class="tab"><span>Previous</span> blog</div>
+						</div>
+						<div data-tabcontent="latest-blog" class="tabContent content-active">
+							<div class="section-blog__previewPosts">
+								<div class="section-blog__previewPost">
+									<div class="previewPost-blockImage">
+										<img src="images/preview-post-image.png" alt="">
+									</div>
+									<div class="previewPost-blockInfo">
+										<h2>Uptrend Homes'u Neden Seçiyorlar? Alanya'daki emlak sektöründe güvendiğiniz partner.</h2>
+										<p>Alanya'da emlak arayışı söz konusu olduğunda, akla gelen ilk isim “Uptrend Homes”dur.</p>
+										<div class="previewPost-blockInfoBottom">
+											<p>21.02.2025</p>
+											<a href="#">Read full story</a>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="section-blog__previewPost">
-								<div class="previewPost-blockImage">
-									<img src="images/preview-post-image.png" alt="">
-								</div>
-								<div class="previewPost-blockInfo">
-									<h2>Uptrend Homes'u Neden Seçiyorlar? Alanya'daki emlak sektöründe güvendiğiniz partner.</h2>
-									<p>Alanya'da emlak arayışı söz konusu olduğunda, akla gelen ilk isim “Uptrend Homes”dur.</p>
-									<div class="previewPost-blockInfoBottom">
-										<p>21.02.2025</p>
-										<a href="#">Read full story</a>
+								<div class="section-blog__previewPost">
+									<div class="previewPost-blockImage">
+										<img src="images/preview-post-image.png" alt="">
+									</div>
+									<div class="previewPost-blockInfo">
+										<h2>Uptrend Homes'u Neden Seçiyorlar? Alanya'daki emlak sektöründe güvendiğiniz partner.</h2>
+										<p>Alanya'da emlak arayışı söz konusu olduğunda, akla gelen ilk isim “Uptrend Homes”dur.</p>
+										<div class="previewPost-blockInfoBottom">
+											<p>21.02.2025</p>
+											<a href="#">Read full story</a>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="section-blog__previewPost">
-								<div class="previewPost-blockImage">
-									<img src="images/preview-post-image.png" alt="">
-								</div>
-								<div class="previewPost-blockInfo">
-									<h2>Uptrend Homes'u Neden Seçiyorlar? Alanya'daki emlak sektöründe güvendiğiniz partner.</h2>
-									<p>Alanya'da emlak arayışı söz konusu olduğunda, akla gelen ilk isim “Uptrend Homes”dur.</p>
-									<div class="previewPost-blockInfoBottom">
-										<p>21.02.2025</p>
-										<a href="#">Read full story</a>
+								<div class="section-blog__previewPost">
+									<div class="previewPost-blockImage">
+										<img src="images/preview-post-image.png" alt="">
+									</div>
+									<div class="previewPost-blockInfo">
+										<h2>Uptrend Homes'u Neden Seçiyorlar? Alanya'daki emlak sektöründe güvendiğiniz partner.</h2>
+										<p>Alanya'da emlak arayışı söz konusu olduğunda, akla gelen ilk isim “Uptrend Homes”dur.</p>
+										<div class="previewPost-blockInfoBottom">
+											<p>21.02.2025</p>
+											<a href="#">Read full story</a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div data-tabcontent="previous-blog" class="tabContent">
-						<div class="section-blog__previewPosts">
-							<div class="section-blog__previewPost">
-								<div class="previewPost-blockImage">
-									<img src="images/preview-post-image.png" alt="">
-								</div>
-								<div class="previewPost-blockInfo">
-									<h2>Uptrend Homes'u Neden Seçiyorlar? Alanya'daki emlak sektöründe güvendiğiniz partner.</h2>
-									<p>Alanya'da emlak arayışı söz konusu olduğunda, akla gelen ilk isim “Uptrend Homes”dur.</p>
-									<div class="previewPost-blockInfoBottom">
-										<p>21.02.2025</p>
-										<a href="#">Read full story</a>
+						<div data-tabcontent="previous-blog" class="tabContent">
+							<div class="section-blog__previewPosts">
+								<div class="section-blog__previewPost">
+									<div class="previewPost-blockImage">
+										<img src="images/preview-post-image.png" alt="">
+									</div>
+									<div class="previewPost-blockInfo">
+										<h2>Uptrend Homes'u Neden Seçiyorlar? Alanya'daki emlak sektöründe güvendiğiniz partner.</h2>
+										<p>Alanya'da emlak arayışı söz konusu olduğunda, akla gelen ilk isim “Uptrend Homes”dur.</p>
+										<div class="previewPost-blockInfoBottom">
+											<p>21.02.2025</p>
+											<a href="#">Read full story</a>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="section-blog__previewPost">
-								<div class="previewPost-blockImage">
-									<img src="images/preview-post-image.png" alt="">
-								</div>
-								<div class="previewPost-blockInfo">
-									<h2>Uptrend Homes'u Neden Seçiyorlar? Alanya'daki emlak sektöründe güvendiğiniz partner.</h2>
-									<p>Alanya'da emlak arayışı söz konusu olduğunda, akla gelen ilk isim “Uptrend Homes”dur.</p>
-									<div class="previewPost-blockInfoBottom">
-										<p>21.02.2025</p>
-										<a href="#">Read full story</a>
+								<div class="section-blog__previewPost">
+									<div class="previewPost-blockImage">
+										<img src="images/preview-post-image.png" alt="">
+									</div>
+									<div class="previewPost-blockInfo">
+										<h2>Uptrend Homes'u Neden Seçiyorlar? Alanya'daki emlak sektöründe güvendiğiniz partner.</h2>
+										<p>Alanya'da emlak arayışı söz konusu olduğunda, akla gelen ilk isim “Uptrend Homes”dur.</p>
+										<div class="previewPost-blockInfoBottom">
+											<p>21.02.2025</p>
+											<a href="#">Read full story</a>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="section-blog__previewPost">
-								<div class="previewPost-blockImage">
-									<img src="images/preview-post-image.png" alt="">
-								</div>
-								<div class="previewPost-blockInfo">
-									<h2>Uptrend Homes'u Neden Seçiyorlar? Alanya'daki emlak sektöründe güvendiğiniz partner.</h2>
-									<p>Alanya'da emlak arayışı söz konusu olduğunda, akla gelen ilk isim “Uptrend Homes”dur.</p>
-									<div class="previewPost-blockInfoBottom">
-										<p>21.02.2025</p>
-										<a href="#">Read full story</a>
+								<div class="section-blog__previewPost">
+									<div class="previewPost-blockImage">
+										<img src="images/preview-post-image.png" alt="">
+									</div>
+									<div class="previewPost-blockInfo">
+										<h2>Uptrend Homes'u Neden Seçiyorlar? Alanya'daki emlak sektöründe güvendiğiniz partner.</h2>
+										<p>Alanya'da emlak arayışı söz konusu olduğunda, akla gelen ilk isim “Uptrend Homes”dur.</p>
+										<div class="previewPost-blockInfoBottom">
+											<p>21.02.2025</p>
+											<a href="#">Read full story</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1487,10 +1647,10 @@
    <img class="footer__element right" src="images/svg/footer-element-right.svg" alt="">
 </footer>
 	</div>
-	<script src="js/script.min.js?_v=20250607191244"></script>
-	<script src="files/swiper/js/swiper-bundle.min.js?_v=20250607191244"></script>
-	<script src="files/swiper/js/init.js?_v=20250607191244"></script>
-	<script src="files/tabs/script.js?_v=20250607191244"></script>
+	<script src="js/script.min.js?_v=20250608164258"></script>
+	<script src="files/swiper/js/swiper-bundle.min.js?_v=20250608164258"></script>
+	<script src="files/swiper/js/init.js?_v=20250608164258"></script>
+	<script src="files/tabs/script.js?_v=20250608164258"></script>
 	<script>
 		initializeSlider('objects-slider-1', 'objects-pagination-slider-1');
 		initializeSlider('objects-slider-2', 'objects-pagination-slider-2');
@@ -1502,9 +1662,9 @@
 		initializeSlider('objects-slider-8', 'objects-pagination-slider-8');
 	</script>
 
-	<script src="files/js/jquery-3.6.1.min.js?_v=20250607191244"></script>
-	<script src="files/select2/js/select2.min.js?_v=20250607191244"></script>
-	<script src="files/select2/js/init.js?_v=20250607191244"></script>
+	<script src="files/js/jquery-3.6.1.min.js?_v=20250608164258"></script>
+	<script src="files/select2/js/select2.min.js?_v=20250608164258"></script>
+	<script src="files/select2/js/init.js?_v=20250608164258"></script>
 
 </body>
 </html>
