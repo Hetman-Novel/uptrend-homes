@@ -1,22 +1,18 @@
-.tab,
-.subTab {
+.tab {
    display: inline-block;
    cursor: pointer;
 }
-
-.tabContent,
-.subTabContent {
-   /*display: none;*/
+.tab.tab-active {
+   pointer-events: none;
+}
+.tabContent {
    height: 0;
    opacity: 0;
    pointer-events: none;
    transition: opacity 0s ease 0s;
    visibility: hidden;
 }
-
-.tabContent.content-active,
-.subTabContent.subContent-active {
-   /*display: block;*/
+.tabContent.content-active {
    height: auto;
    pointer-events: all;
    opacity: 1;
