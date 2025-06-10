@@ -3955,6 +3955,72 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
   width: 25px;
 }
 
+.apartament__wrap-slider {
+  margin-top: 16px;
+}
+
+.apartament__wrap-slider .swiper-slide {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.apartament__wrap-slider .swiper-slide img {
+  border-radius: inherit;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.apartament__big-slider {
+  height: 100%;
+}
+
+.apartament__big-slider .tags {
+  align-items: center;
+  left: 14px;
+  display: flex;
+  position: absolute;
+  top: 15px;
+  z-index: 2;
+}
+
+.apartament__big-slider .tags .tag {
+  border-radius: 11.56px;
+  color: #fff;
+  font-size: 14.44px;
+  font-weight: 500;
+  line-height: 100%;
+  padding: 5px 11px 6px;
+}
+
+.apartament__big-slider .tags .tag:not(:last-child) {
+  margin-right: 8px;
+}
+
+.apartament__big-slider .tags .tag.vivid-orange {
+  background-color: #FFAC13;
+}
+
+.apartament__big-slider .tags .tag.vivid-red {
+  background-color: #F05222;
+}
+
+.apartament__gallery-slider {
+  height: 100%;
+}
+
+.apartament__gallery-slider .swiper-slide {
+  cursor: pointer;
+  height: auto;
+}
+
 .apartament__items {
   padding-bottom: 40px;
   padding-top: 50px;
@@ -4327,6 +4393,76 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
 .managers-slider__icons li a img {
   height: 100%;
   width: 100%;
+}
+
+.fancybox__container {
+  z-index: 9999;
+}
+
+.apartament-big-slider-show-all-photos {
+  background-color: #fff;
+  border-radius: 6px;
+  bottom: 18px;
+  left: 14px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 100%;
+  padding: 7px 8px 7px 26px;
+  position: absolute;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.apartament-big-slider-show-all-photos span {
+  position: relative;
+}
+
+.apartament-big-slider-show-all-photos span::before {
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7.5 4H7.505M1.5 3C1.5 2.60218 1.65804 2.22064 1.93934 1.93934C2.22064 1.65804 2.60218 1.5 3 1.5H9C9.39782 1.5 9.77936 1.65804 10.0607 1.93934C10.342 2.22064 10.5 2.60218 10.5 3V9C10.5 9.39782 10.342 9.77936 10.0607 10.0607C9.77936 10.342 9.39782 10.5 9 10.5H3C2.60218 10.5 2.22064 10.342 1.93934 10.0607C1.65804 9.77936 1.5 9.39782 1.5 9V3Z' stroke='%232A2A29' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M1.5 7.99991L4 5.49991C4.464 5.05341 5.036 5.05341 5.5 5.49991L8 7.99991' stroke='%232A2A29' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M7 6.99991L7.5 6.49991C7.964 6.05341 8.536 6.05341 9 6.49991L10.5 7.99991' stroke='%232A2A29' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  left: -6px;
+  position: absolute;
+  transform: translateX(-100%);
+  width: 12px;
+}
+
+.apartament-wrap-buttons-swiper {
+  align-items: center;
+  bottom: 18px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 18px;
+  width: 51px;
+  z-index: 2;
+}
+
+.apartament-button-swiper {
+  background-color: #fff;
+  border-radius: 6px;
+  height: 100%;
+  margin: 0;
+  position: sticky;
+  width: 24px;
+}
+
+.apartament-button-swiper::after {
+  display: none;
+}
+
+.apartament-button-swiper svg {
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  max-width: 16px;
+  transform: translate(-50%, -50%);
 }
 
 /* Footer */
@@ -4730,6 +4866,25 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
     display: table;
     margin: 13px 0 0;
     padding: 0;
+  }
+
+  .apartament__wrap-slider {
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    margin: 29px -10px 0;
+  }
+
+  .apartament__big-slider {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(72% - 21px);
+  }
+
+  .apartament__gallery-slider {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(28% - 19px);
   }
 }
 
@@ -5751,6 +5906,30 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
   .section-blog .tabs__wrap-tab .tab {
     font-size: 28px;
   }
+
+  .apartament__wrap-slider {
+    margin-top: 27px;
+  }
+
+  .apartament__big-slider .swiper-slide {
+    padding-bottom: 78%;
+  }
+
+  .apartament__gallery-slider {
+    margin-top: 20px;
+  }
+
+  .apartament__gallery-slider .swiper-slide {
+    padding-bottom: 43%;
+  }
+
+  .apartament__gallery-slider .swiper-slide:nth-child(odd) {
+    width: calc(46% - 10px);
+  }
+
+  .apartament__gallery-slider .swiper-slide:nth-child(even) {
+    width: calc(54% - 10px);
+  }
 }
 
 @media screen and (max-width: 720.98px) {
@@ -6181,6 +6360,37 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
     margin-top: 17px !important;
   }
 
+  .apartament__big-slider .tags {
+    left: 12px;
+    top: 13px;
+  }
+
+  .apartament__big-slider .tags .tag {
+    font-size: 12.22px;
+    line-height: 100%;
+    padding: 5px 10px;
+  }
+
+  .apartament__big-slider .tags .tag:not(:last-child) {
+    margin-right: 7px;
+  }
+
+  .apartament__gallery-slider {
+    margin-top: 10px;
+  }
+
+  .apartament__gallery-slider .swiper-slide:nth-child(odd) {
+    width: calc(46% - 6.5px);
+  }
+
+  .apartament__gallery-slider .swiper-slide:nth-child(even) {
+    width: calc(54% - 2.5px);
+  }
+
+  .apartament__items {
+    padding-top: 38px;
+  }
+
   .apartament__itemBlock p {
     line-height: 20px;
   }
@@ -6211,6 +6421,21 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
   .managers-slider__image {
     height: 200px;
     width: 220px;
+  }
+
+  .apartament-big-slider-show-all-photos {
+    bottom: 10px;
+    left: 9px;
+  }
+
+  .apartament-big-slider-show-all-photos span::before {
+    bottom: 0;
+  }
+
+  .apartament-wrap-buttons-swiper {
+    bottom: 10px;
+    right: 10px;
+    transform: translateX(2px);
   }
 
   .footer {
@@ -6338,6 +6563,12 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
 @media screen and (max-width: 360.98px) {
   .footer__email {
     word-break: break-all;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1320px) {
+  .apartament__wrap-slider {
+    height: calc(482px + 318 * ((100vw - 320px) / 1000));
   }
 }
 
