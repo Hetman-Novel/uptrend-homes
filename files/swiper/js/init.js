@@ -13,6 +13,45 @@ lazyImages.forEach(addLoadedClass); // Loop through all the images and call the 
 
 /* === */
 
+/* Managers slider -> */
+let managersSlider = document.getElementById('managers-slider');
+if (managersSlider) { 
+   new Swiper(managersSlider, {
+      navigation: {
+         prevEl: '#managers-button-prev',
+         nextEl: '#managers-button-next',
+      },
+      autoHeight: false,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      spaceBetween: 40,
+      loop: true,
+      /*autoplay: {
+         delay: 6000,
+         stopOnLastSlide: false,
+         disableOnInteraction: false,
+      },*/
+      speed: 600,
+      effect: 'fade',
+      fadeEffect: {
+         crossFade: true
+      },
+      preloadImages: false,
+      lazy: {
+         loadOnTransitionStart: false,
+         loadPrewNext: false,
+      },
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+   });
+
+   if (document.querySelector('#managers-slider .swiper-slide').length < 1) {
+      document.querySelector('.managers-wrap-slider .slider-buttons').remove();
+   }
+}
+/* <- Managers slider */
+
 /* Most Popular Objects slider -> */
 let mostPopularObjectsSlider = document.getElementById('most-popular-objects-slider');
 if (mostPopularObjectsSlider) { 
