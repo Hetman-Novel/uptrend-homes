@@ -5817,8 +5817,19 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
     margin-bottom: 12px;
   }
 
+  .breadcrumbs {
+    margin-bottom: 33px;
+    padding-top: 7px;
+  }
+
   .breadcrumbs__item {
-    font-size: 14px;
+    font-size: 8px;
+    line-height: 100%;
+  }
+
+  .breadcrumbs__item:not(:last-child)::after {
+    bottom: 3px;
+    margin: 0 8px 0 5px;
   }
 
   .n_container {
