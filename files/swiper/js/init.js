@@ -44,7 +44,7 @@ if (apartamentWrapSlider) {
          },
       },
    });
-   let apartamentBigSlider = new Swiper("#apartament-big-slider", {
+   new Swiper("#apartament-big-slider", {
       loop: true,
       slidesPerView: 1,
       slidesPerGroup: 1,
