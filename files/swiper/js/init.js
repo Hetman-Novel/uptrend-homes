@@ -14,44 +14,61 @@ lazyImages.forEach(addLoadedClass); // Loop through all the images and call the 
 /* === */
 
 /* Apartament page slider -> */
-let apartamentGallerySlider = new Swiper("#apartament-gallery-slider", {
-   loop: true,
-   slidesPerGroup: 1,
-   //freeMode: true,
-   //watchSlidesProgress: true,
-   breakpoints: {
-      0: {
-         spaceBetween: 9,
-         slidesPerView: 'auto',
+let apartamentWrapSlider = document.querySelector('.apartament__wrap-slider');
+if (apartamentWrapSlider) {
+   let apartamentGallerySlider = new Swiper("#apartament-gallery-slider", {
+      loop: true,
+      slidesPerGroup: 1,
+      preloadImages: false,
+      lazy: {
+         loadOnTransitionStart: false,
+         loadPrewNext: false,
       },
-      576: {
-         spaceBetween: 20,
-         slidesPerView: 'auto',
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      //freeMode: true,
+      //watchSlidesProgress: true,
+      breakpoints: {
+         0: {
+            spaceBetween: 9,
+            slidesPerView: 'auto',
+         },
+         576: {
+            spaceBetween: 20,
+            slidesPerView: 'auto',
+         },
+         768: {
+            direction: 'vertical',
+            spaceBetween: 20,
+            slidesPerView: 3,
+         },
       },
-      768: {
-         direction: 'vertical',
-         spaceBetween: 20,
-         slidesPerView: 3,
+   });
+   let apartamentBigSlider = new Swiper("#apartament-big-slider", {
+      loop: true,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      effect: 'fade',
+      fadeEffect: {
+         crossFade: true
       },
-   },
-});
-let apartamentBigSlider = new Swiper("#apartament-big-slider", {
-   loop: true,
-   slidesPerView: 1,
-   slidesPerGroup: 1,
-   effect: 'fade',
-   fadeEffect: {
-      crossFade: true
-   },
-   spaceBetween: 10,
-   navigation: {
-      prevEl: '#apartament-button-prev',
-      nextEl: '#apartament-button-next',
-   },
-   thumbs: {
-      swiper: apartamentGallerySlider,
-   },
-});
+      preloadImages: false,
+      lazy: {
+         loadOnTransitionStart: false,
+         loadPrewNext: false,
+      },
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      spaceBetween: 10,
+      navigation: {
+         prevEl: '#apartament-button-prev',
+         nextEl: '#apartament-button-next',
+      },
+      thumbs: {
+         swiper: apartamentGallerySlider,
+      },
+   });
+}
 /* <- Apartament page slider */
 
 /* Managers slider -> */
