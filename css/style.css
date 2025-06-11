@@ -5512,6 +5512,106 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
   z-index: 0;
 }
 
+/* Page - Service */
+
+.service-page__content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  padding-bottom: 105px;
+  padding-top: 46px;
+}
+
+.service-page__content h1,
+.service-page__content h2,
+.service-page__content h3,
+.service-page__content h4,
+.service-page__content h5,
+.service-page__content h6 {
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+
+.service-page__content h2,
+.service-page__content h3,
+.service-page__content h4,
+.service-page__content h5,
+.service-page__content h6 {
+  font-size: 36px;
+  margin-bottom: 34px;
+  margin-top: 57px;
+}
+
+.service-page__content h1 {
+  margin-bottom: 64px;
+}
+
+.service-page__content li,
+.service-page__content p {
+  color: #000;
+  line-height: 150%;
+}
+
+.service-page__content ul,
+.service-page__content ol {
+  margin-top: 32px;
+}
+
+.service-page__content li {
+  list-style: none;
+  padding-left: 44px;
+  position: relative;
+}
+
+.service-page__content li::before {
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M10.562 15.908L16.958 9.512L16.25 8.804L10.562 14.492L7.712 11.642L7.004 12.35L10.562 15.908ZM12.003 21C10.759 21 9.589 20.764 8.493 20.292C7.39767 19.8193 6.44467 19.178 5.634 18.368C4.82333 17.558 4.18167 16.606 3.709 15.512C3.23633 14.418 3 13.2483 3 12.003C3 10.7577 3.23633 9.58767 3.709 8.493C4.181 7.39767 4.82133 6.44467 5.63 5.634C6.43867 4.82333 7.391 4.18167 8.487 3.709C9.583 3.23633 10.753 3 11.997 3C13.241 3 14.411 3.23633 15.507 3.709C16.6023 4.181 17.5553 4.82167 18.366 5.631C19.1767 6.44033 19.8183 7.39267 20.291 8.488C20.7637 9.58333 21 10.753 21 11.997C21 13.241 20.764 14.411 20.292 15.507C19.82 16.603 19.1787 17.556 18.368 18.366C17.5573 19.176 16.6053 19.8177 15.512 20.291C14.4187 20.7643 13.249 21.0007 12.003 21Z' fill='%23F05222'/%3e%3c/svg%3e");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 24px;
+}
+
+.service-page__content li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.service-page__content p {
+  margin-bottom: 24px !important;
+}
+
+.service-page__content p strong {
+  font-weight: 600;
+}
+
+.service-page__content img {
+  display: table;
+  margin: 33px auto 0;
+}
+
+.service-page__button {
+  align-items: center;
+  background-color: #00B6DA;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  height: 60px;
+  margin: 32px auto 0;
+  padding: 7px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  width: 286px;
+}
+
 /* Footer */
 
 .footer {
@@ -7173,6 +7273,15 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
   .apartament__gallery-slider .swiper-slide:nth-child(even) {
     width: calc(54% - 10px);
   }
+
+  .service-page__content h1 br,
+  .service-page__content h2 br,
+  .service-page__content h3 br,
+  .service-page__content h4 br,
+  .service-page__content h5 br,
+  .service-page__content h6 br {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 720.98px) {
@@ -7213,6 +7322,14 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
   .apartments.grid .apartment {
     margin: 0 15px 30px;
     width: calc(50% - 30px);
+  }
+
+  .service-page__content h2,
+  .service-page__content h3,
+  .service-page__content h4,
+  .service-page__content h5,
+  .service-page__content h6 {
+    font-size: 30px;
   }
 }
 
@@ -7877,6 +7994,25 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
 
   .how-to-find-us__social {
     margin-top: 28px;
+  }
+
+  .service-page__content {
+    padding-bottom: 60px;
+    padding-top: 59px;
+  }
+
+  .service-page__content h2,
+  .service-page__content h3,
+  .service-page__content h4,
+  .service-page__content h5,
+  .service-page__content h6 {
+    font-size: 26px;
+    margin-bottom: 32px;
+    margin-top: 59px;
+  }
+
+  .service-page__content h1 {
+    margin-bottom: 61px;
   }
 
   .footer {
