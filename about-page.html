@@ -7,12 +7,12 @@
    <!--<link rel="icon" type="image/png" sizes="48x48" href="images/favicon/favicon-48x48.png">
    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">-->
-   <link rel="stylesheet" href="files/tabs/style.css?_v=20250611203437">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250611203437">
-   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20250611203437">
-   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20250611203437">
-   <link rel="stylesheet" href="files/fancybox/css/fancybox.css?_v=20250611203437">
-   <link rel="stylesheet" href="css/style.min.css?_v=20250611203437">
+   <link rel="stylesheet" href="files/tabs/style.css?_v=20250612011706">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250612011706">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20250612011706">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20250612011706">
+   <link rel="stylesheet" href="files/fancybox/css/fancybox.css?_v=20250612011706">
+   <link rel="stylesheet" href="css/style.min.css?_v=20250612011706">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>About Company - UPTREND HOMES</title>
 </head>
@@ -359,28 +359,458 @@
          <section class="section-our-team">
             <div class="n_container">
                <h2>Our <span>Team?</span></h2>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-           
+               <p class="section-our-team__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+               
+               <!--
+                  * Слайдер gallery__wrap-slider only-tablet-and-pc от 481 отображается. Класс only-tablet-and-pc скрывает до 480px
+                  * team просто блоки копия с страницы Team. Класс only-mobile скрывает от 481px
+                  * Можно оставить любой вариант из двух если будет необходимо удалив вариант не нужный и с нужного просто убрать класс.
+               -->
+               
+               <div class="gallery__wrap-slider only-tablet-and-pc">
+                  <div id="our-team-slider" class="swiper-conteiner">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="employee">
+                              <div class="employee__blockPhoto">
+                                 <img loading="lazy" src="images/employee-1.png" alt="Shahin Chag">
+                                 <div class="swiper-lazy-preloader"></div>
+                              </div>
+                              <h2 class="employee__name">Shahin Chag</h2>
+                              <p class="employee__position">CEO</p>
+                              <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                              <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                              <ul class="employee__social">
+                                 <li class="fb-icon"><a href="#"></a></li>
+                                 <li class="instagram-icon"><a href="#"></a></li>
+                                 <li class="ws-icon"><a href="#"></a></li>
+                                 <li class="vb-icon"><a href="#"></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="employee">
+                              <div class="employee__blockPhoto">
+                                 <img loading="lazy" src="images/employee-2.png" alt="Julia Vysotskaya">
+                                 <div class="swiper-lazy-preloader"></div>
+                              </div>
+                              <h2 class="employee__name">Julia Vysotskaya</h2>
+                              <p class="employee__position">Head of Sales Department</p>
+                              <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                              <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                              <ul class="employee__social">
+                                 <li class="fb-icon"><a href="#"></a></li>
+                                 <li class="instagram-icon"><a href="#"></a></li>
+                                 <li class="ws-icon"><a href="#"></a></li>
+                                 <li class="vb-icon"><a href="#"></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="employee">
+                              <div class="employee__blockPhoto">
+                                 <img loading="lazy" src="images/employee-3.png" alt="Anastasia">
+                                 <div class="swiper-lazy-preloader"></div>
+                              </div>
+                              <h2 class="employee__name">Anastasia</h2>
+                              <p class="employee__position">Real estate expert</p>
+                              <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                              <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                              <ul class="employee__social">
+                                 <li class="fb-icon"><a href="#"></a></li>
+                                 <li class="instagram-icon"><a href="#"></a></li>
+                                 <li class="ws-icon"><a href="#"></a></li>
+                                 <li class="vb-icon"><a href="#"></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="employee">
+                              <div class="employee__blockPhoto">
+                                 <img loading="lazy" src="images/employee-4.png" alt="Julia">
+                                 <div class="swiper-lazy-preloader"></div>
+                              </div>
+                              <h2 class="employee__name">Julia</h2>
+                              <p class="employee__position">Real estate expert</p>
+                              <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                              <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                              <ul class="employee__social">
+                                 <li class="fb-icon"><a href="#"></a></li>
+                                 <li class="instagram-icon"><a href="#"></a></li>
+                                 <li class="ws-icon"><a href="#"></a></li>
+                                 <li class="vb-icon"><a href="#"></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="employee">
+                              <div class="employee__blockPhoto">
+                                 <img loading="lazy" src="images/employee-2.png" alt="Julia Vysotskaya">
+                                 <div class="swiper-lazy-preloader"></div>
+                              </div>
+                              <h2 class="employee__name">Julia Vysotskaya</h2>
+                              <p class="employee__position">Head of Sales Department</p>
+                              <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                              <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                              <ul class="employee__social">
+                                 <li class="fb-icon"><a href="#"></a></li>
+                                 <li class="instagram-icon"><a href="#"></a></li>
+                                 <li class="ws-icon"><a href="#"></a></li>
+                                 <li class="vb-icon"><a href="#"></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="employee">
+                              <div class="employee__blockPhoto">
+                                 <img loading="lazy" src="images/employee-1.png" alt="Shahin Chag">
+                                 <div class="swiper-lazy-preloader"></div>
+                              </div>
+                              <h2 class="employee__name">Shahin Chag</h2>
+                              <p class="employee__position">CEO</p>
+                              <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                              <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                              <ul class="employee__social">
+                                 <li class="fb-icon"><a href="#"></a></li>
+                                 <li class="instagram-icon"><a href="#"></a></li>
+                                 <li class="ws-icon"><a href="#"></a></li>
+                                 <li class="vb-icon"><a href="#"></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="employee">
+                              <div class="employee__blockPhoto">
+                                 <img loading="lazy" src="images/employee-3.png" alt="Anastasia">
+                                 <div class="swiper-lazy-preloader"></div>
+                              </div>
+                              <h2 class="employee__name">Anastasia</h2>
+                              <p class="employee__position">Real estate expert</p>
+                              <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                              <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                              <ul class="employee__social">
+                                 <li class="fb-icon"><a href="#"></a></li>
+                                 <li class="instagram-icon"><a href="#"></a></li>
+                                 <li class="ws-icon"><a href="#"></a></li>
+                                 <li class="vb-icon"><a href="#"></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="gallery__navigation">
+                     <div id="our-team-pagination" class="swiper-pagination"></div>
+                     <div class="slider-buttons">
+                        <div id="our-team-button-prev" class="swiper-button-prev">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M15.8334 10L4.16671 10M4.16671 10L9.16671 15M4.16671 10L9.16671 5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </div>
+                        <div id="our-team-button-next" class="swiper-button-next">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.16663 10L15.8333 10M15.8333 10L10.8333 5M15.8333 10L10.8333 15" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="team only-mobile">
+                  <div class="team__item">
+                     <div class="employee">
+                        <div class="employee__blockPhoto">
+                           <img src="images/employee-1.png" alt="Shahin Chag">
+                        </div>
+                        <h2 class="employee__name">Shahin Chag</h2>
+                        <p class="employee__position">CEO</p>
+                        <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                        <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                        <ul class="employee__social">
+                           <li class="fb-icon"><a href="#"></a></li>
+                           <li class="instagram-icon"><a href="#"></a></li>
+                           <li class="ws-icon"><a href="#"></a></li>
+                           <li class="vb-icon"><a href="#"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="team__item">
+                     <div class="employee">
+                        <div class="employee__blockPhoto">
+                           <img src="images/employee-2.png" alt="Julia Vysotskaya">
+                        </div>
+                        <h2 class="employee__name">Julia Vysotskaya</h2>
+                        <p class="employee__position">Head of Sales Department</p>
+                        <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                        <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                        <ul class="employee__social">
+                           <li class="fb-icon"><a href="#"></a></li>
+                           <li class="instagram-icon"><a href="#"></a></li>
+                           <li class="ws-icon"><a href="#"></a></li>
+                           <li class="vb-icon"><a href="#"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="team__item">
+                     <div class="employee">
+                        <div class="employee__blockPhoto">
+                           <img src="images/employee-3.png" alt="Anastasia">
+                        </div>
+                        <h2 class="employee__name">Anastasia</h2>
+                        <p class="employee__position">Real estate expert</p>
+                        <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                        <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                        <ul class="employee__social">
+                           <li class="fb-icon"><a href="#"></a></li>
+                           <li class="instagram-icon"><a href="#"></a></li>
+                           <li class="ws-icon"><a href="#"></a></li>
+                           <li class="vb-icon"><a href="#"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="team__item">
+                     <div class="employee">
+                        <div class="employee__blockPhoto">
+                           <img src="images/employee-4.png" alt="Julia">
+                        </div>
+                        <h2 class="employee__name">Julia</h2>
+                        <p class="employee__position">Real estate expert</p>
+                        <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                        <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                        <ul class="employee__social">
+                           <li class="fb-icon"><a href="#"></a></li>
+                           <li class="instagram-icon"><a href="#"></a></li>
+                           <li class="ws-icon"><a href="#"></a></li>
+                           <li class="vb-icon"><a href="#"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="team__item">
+                     <div class="employee">
+                        <div class="employee__blockPhoto">
+                           <img src="images/employee-1.png" alt="Shahin Chag">
+                        </div>
+                        <h2 class="employee__name">Shahin Chag</h2>
+                        <p class="employee__position">CEO</p>
+                        <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                        <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                        <ul class="employee__social">
+                           <li class="fb-icon"><a href="#"></a></li>
+                           <li class="instagram-icon"><a href="#"></a></li>
+                           <li class="ws-icon"><a href="#"></a></li>
+                           <li class="vb-icon"><a href="#"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="team__item">
+                     <div class="employee">
+                        <div class="employee__blockPhoto">
+                           <img src="images/employee-2.png" alt="Julia Vysotskaya">
+                        </div>
+                        <h2 class="employee__name">Julia Vysotskaya</h2>
+                        <p class="employee__position">Head of Sales Department</p>
+                        <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                        <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                        <ul class="employee__social">
+                           <li class="fb-icon"><a href="#"></a></li>
+                           <li class="instagram-icon"><a href="#"></a></li>
+                           <li class="ws-icon"><a href="#"></a></li>
+                           <li class="vb-icon"><a href="#"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="team__item">
+                     <div class="employee">
+                        <div class="employee__blockPhoto">
+                           <img src="images/employee-3.png" alt="Anastasia">
+                        </div>
+                        <h2 class="employee__name">Anastasia</h2>
+                        <p class="employee__position">Real estate expert</p>
+                        <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                        <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                        <ul class="employee__social">
+                           <li class="fb-icon"><a href="#"></a></li>
+                           <li class="instagram-icon"><a href="#"></a></li>
+                           <li class="ws-icon"><a href="#"></a></li>
+                           <li class="vb-icon"><a href="#"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="team__item">
+                     <div class="employee">
+                        <div class="employee__blockPhoto">
+                           <img src="images/employee-4.png" alt="Julia">
+                        </div>
+                        <h2 class="employee__name">Julia</h2>
+                        <p class="employee__position">Real estate expert</p>
+                        <p class="employee__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
+                        <a href="tel:+905355119406" class="employee__phone">+905355119406</a>
+                        <ul class="employee__social">
+                           <li class="fb-icon"><a href="#"></a></li>
+                           <li class="instagram-icon"><a href="#"></a></li>
+                           <li class="ws-icon"><a href="#"></a></li>
+                           <li class="vb-icon"><a href="#"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
             </div>
          </section>
 
          <section class="certificates">
             <div class="n_container">
                <div class="certificates__items">
-                  
-               </div>
-               <div class="certificates__items">
-                  <h2>Certificates</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                  <div class="certificates__item">
+                     <div class="certificates__content">
+                        <h2>Certificates</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                     </div>
+                  </div>
+                  <div class="certificates__item">
+                     <div class="certificates__wrap-slider">
+                        <div id="certificates-slider" class="swiper-conteiner">
+                           <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                 <img loading="lazy" src="images/certificat-1.png" alt="">
+                                 <div class="swiper-lazy-preloader"></div>
+                              </div>
+                              <div class="swiper-slide">
+                                 <img loading="lazy" src="images/certificat-2.png" alt="">
+                                 <div class="swiper-lazy-preloader"></div>
+                              </div>
+                              <div class="swiper-slide">
+                                 <img loading="lazy" src="images/certificat-3.png" alt="">
+                                 <div class="swiper-lazy-preloader"></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="gallery__navigation">
+                           <div class="slider-buttons">
+                              <div id="certificates-button-prev" class="swiper-button-prev">
+                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8334 10L4.16671 10M4.16671 10L9.16671 15M4.16671 10L9.16671 5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                              </div>
+                              <div id="certificates-button-next" class="swiper-button-next">
+                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.16663 10L15.8333 10M15.8333 10L10.8333 5M15.8333 10L10.8333 15" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                              </div>
+                           </div>
+                           <div id="certificates-pagination" class="swiper-pagination"></div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </section>
 
          <section class="faq">
             <div class="n_container">
-               <h2>Questions and <span>answers</span></h2>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-
+               <!--
+                  * Класс _active у block__title отвечает за раскрытие (в дизайне видимо для примера были открыты все изначально)
+                  * Атрибут data-one-spoller закрывает предыдущий блок при открытии другого, если будет необходимо, нужно в качестве дополнения добавить к атрибуту data-spollers
+               -->
+               <div class="faq__top">
+                  <h2>Questions and <span>answers</span></h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+               </div>
+               <!-- data-one-spoller -->
+               <div data-spollers class="block">
+                  <div class="block__item">
+                     <button tabindex="-1" type="button" data-spoller class="block__title _active"><!-- _active -->
+                        Question text goes here
+                        <span class="block__wrap-arrow">
+                           <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.88379 9.53027C1.79832 9.6157 1.66636 9.62664 1.56934 9.5625L1.53027 9.53027L1.17676 9.17676C1.09133 9.09133 1.08048 8.95933 1.14453 8.8623L1.17676 8.82324L8.82324 1.17676C8.90868 1.09132 9.04066 1.08043 9.1377 1.14453L9.17676 1.17676L16.8232 8.82324C16.9087 8.9087 16.9196 9.04066 16.8555 9.1377L16.8232 9.17676L16.4697 9.53027C16.3843 9.61569 16.2523 9.62657 16.1553 9.5625L16.1162 9.53027L9 2.41406L1.88379 9.53027Z" fill="#00B6DA" stroke="#00B6DA"/>
+                           </svg>
+                        </span>
+                     </button>
+                     <div class="block__text">
+                        <div class="block__content">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="block__item">
+                     <button tabindex="-1" type="button" data-spoller class="block__title _active"><!-- _active -->
+                        Question text goes here
+                        <span class="block__wrap-arrow">
+                           <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.88379 9.53027C1.79832 9.6157 1.66636 9.62664 1.56934 9.5625L1.53027 9.53027L1.17676 9.17676C1.09133 9.09133 1.08048 8.95933 1.14453 8.8623L1.17676 8.82324L8.82324 1.17676C8.90868 1.09132 9.04066 1.08043 9.1377 1.14453L9.17676 1.17676L16.8232 8.82324C16.9087 8.9087 16.9196 9.04066 16.8555 9.1377L16.8232 9.17676L16.4697 9.53027C16.3843 9.61569 16.2523 9.62657 16.1553 9.5625L16.1162 9.53027L9 2.41406L1.88379 9.53027Z" fill="#00B6DA" stroke="#00B6DA"/>
+                           </svg>
+                        </span>
+                     </button>
+                     <div class="block__text">
+                        <div class="block__content">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="block__item">
+                     <button tabindex="-1" type="button" data-spoller class="block__title _active"><!-- _active -->
+                        Question text goes here
+                        <span class="block__wrap-arrow">
+                           <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.88379 9.53027C1.79832 9.6157 1.66636 9.62664 1.56934 9.5625L1.53027 9.53027L1.17676 9.17676C1.09133 9.09133 1.08048 8.95933 1.14453 8.8623L1.17676 8.82324L8.82324 1.17676C8.90868 1.09132 9.04066 1.08043 9.1377 1.14453L9.17676 1.17676L16.8232 8.82324C16.9087 8.9087 16.9196 9.04066 16.8555 9.1377L16.8232 9.17676L16.4697 9.53027C16.3843 9.61569 16.2523 9.62657 16.1553 9.5625L16.1162 9.53027L9 2.41406L1.88379 9.53027Z" fill="#00B6DA" stroke="#00B6DA"/>
+                           </svg>
+                        </span>
+                     </button>
+                     <div class="block__text">
+                        <div class="block__content">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="block__item">
+                     <button tabindex="-1" type="button" data-spoller class="block__title _active"><!-- _active -->
+                        Question text goes here
+                        <span class="block__wrap-arrow">
+                           <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.88379 9.53027C1.79832 9.6157 1.66636 9.62664 1.56934 9.5625L1.53027 9.53027L1.17676 9.17676C1.09133 9.09133 1.08048 8.95933 1.14453 8.8623L1.17676 8.82324L8.82324 1.17676C8.90868 1.09132 9.04066 1.08043 9.1377 1.14453L9.17676 1.17676L16.8232 8.82324C16.9087 8.9087 16.9196 9.04066 16.8555 9.1377L16.8232 9.17676L16.4697 9.53027C16.3843 9.61569 16.2523 9.62657 16.1553 9.5625L16.1162 9.53027L9 2.41406L1.88379 9.53027Z" fill="#00B6DA" stroke="#00B6DA"/>
+                           </svg>
+                        </span>
+                     </button>
+                     <div class="block__text">
+                        <div class="block__content">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="block__item">
+                     <button tabindex="-1" type="button" data-spoller class="block__title _active"><!-- _active -->
+                        Question text goes here
+                        <span class="block__wrap-arrow">
+                           <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.88379 9.53027C1.79832 9.6157 1.66636 9.62664 1.56934 9.5625L1.53027 9.53027L1.17676 9.17676C1.09133 9.09133 1.08048 8.95933 1.14453 8.8623L1.17676 8.82324L8.82324 1.17676C8.90868 1.09132 9.04066 1.08043 9.1377 1.14453L9.17676 1.17676L16.8232 8.82324C16.9087 8.9087 16.9196 9.04066 16.8555 9.1377L16.8232 9.17676L16.4697 9.53027C16.3843 9.61569 16.2523 9.62657 16.1553 9.5625L16.1162 9.53027L9 2.41406L1.88379 9.53027Z" fill="#00B6DA" stroke="#00B6DA"/>
+                           </svg>
+                        </span>
+                     </button>
+                     <div class="block__text">
+                        <div class="block__content">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                           <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, voluptatum necessitatibus?</li>
+                              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                           </ul>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius delectus incidunt ducimus ullam laborum deserunt cupiditate recusandae earum nemo eos, necessitatibus temporibus quaerat possimus? Dignissimos labore voluptatum enim rem eligendi tenetur unde porro!</p>
+                           <ol>
+                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero!</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facilis, dolore sint optio sequi laborum dolorum. Recusandae.</li>
+                              <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae eaque illo corrupti a?</li>
+                           </ol>
+                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, maxime incidunt quo reprehenderit enim sint velit ratione. Placeat, et quam? Vitae itaque provident tenetur quas.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="faq__bottom">
+                  <h3>Still have questions?</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                  <a href="#" class="faq__button">CONTACT</a>
+               </div>
             </div>
          </section>
 
@@ -478,8 +908,8 @@
 </footer>
 
 	</div>
-	<script src="js/script.min.js?_v=20250611203437"></script>
-	<script src="files/swiper/js/swiper-bundle.min.js?_v=20250611203437"></script>
-	<script src="files/swiper/js/init.js?_v=20250611203437"></script>
+	<script src="js/script.min.js?_v=20250612011706"></script>
+	<script src="files/swiper/js/swiper-bundle.min.js?_v=20250612011706"></script>
+	<script src="files/swiper/js/init.js?_v=20250612011706"></script>
 </body>
 </html>
