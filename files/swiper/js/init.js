@@ -53,6 +53,49 @@ if (gallerySlider) {
 }
 /* <- Gallery slider */
 
+/* Our Team slider -> */
+let ourTeamSlider = document.getElementById('our-team-slider');
+if (ourTeamSlider) {
+   new Swiper(ourTeamSlider, {
+      loop: false,
+      slidesPerView: 4,
+      slidesPerGroup: 1,
+      effect: 'slide',
+      preloadImages: false,
+      lazy: {
+         loadOnTransitionStart: false,
+         loadPrewNext: false,
+      },
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      spaceBetween: 32,
+      navigation: {
+         prevEl: '#our-team-button-prev',
+         nextEl: '#our-team-button-next',
+      },
+      pagination: {
+         el: '#our-team-pagination',
+         clickable: true,
+      },
+      breakpoints: {
+         0: {
+            slidesPerView: 1.18,
+         },
+         576: {
+            slidesPerView: 2,
+         },
+         768: {
+            slidesPerView: 3,
+         },
+         1025: {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+         },
+      },
+   });
+}
+/* <- Our Team slider */
+
 /* Apartament page slider -> */
 let apartamentWrapSlider = document.querySelector('.apartament__wrap-slider');
 if (apartamentWrapSlider) {
@@ -372,3 +415,43 @@ if (newestObjectsSlider) {
    });
 }
 /* <- Newest Objects slider */
+
+/* Certificates slider -> */
+let certificatesSlider = document.getElementById('certificates-slider');
+if (certificatesSlider) {
+   new Swiper(certificatesSlider, {
+      loop: false,
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      effect: 'slide',
+      preloadImages: false,
+      lazy: {
+         loadOnTransitionStart: false,
+         loadPrewNext: false,
+      },
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      spaceBetween: 32,
+      navigation: {
+         prevEl: '#certificates-button-prev',
+         nextEl: '#certificates-button-next',
+      },
+      pagination: {
+         el: '#certificates-pagination',
+         clickable: true,
+      },
+      breakpoints: {
+         0: {
+            slidesPerView: 1.25,
+         },
+         576: {
+            slidesPerView: 2.25,
+         },
+         961: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+         },
+      },
+   });
+}
+/* <- Certificates slider */
