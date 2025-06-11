@@ -13,6 +13,46 @@ lazyImages.forEach(addLoadedClass); // Loop through all the images and call the 
 
 /* === */
 
+/* Gallery slider -> */
+let gallerySlider = document.getElementById('gallery-slider');
+if (gallerySlider) {
+   new Swiper(gallerySlider, {
+      loop: false,
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      effect: 'slide',
+      preloadImages: false,
+      lazy: {
+         loadOnTransitionStart: false,
+         loadPrewNext: false,
+      },
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      spaceBetween: 32,
+      navigation: {
+         prevEl: '#gallery-button-prev',
+         nextEl: '#gallery-button-next',
+      },
+      pagination: {
+         el: '#gallery-pagination',
+         clickable: true,
+      },
+      breakpoints: {
+         0: {
+            slidesPerView: 1.18,
+         },
+         576: {
+            slidesPerView: 2.1,
+         },
+         1025: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+         },
+      },
+   });
+}
+/* <- Gallery slider */
+
 /* Apartament page slider -> */
 let apartamentWrapSlider = document.querySelector('.apartament__wrap-slider');
 if (apartamentWrapSlider) {
