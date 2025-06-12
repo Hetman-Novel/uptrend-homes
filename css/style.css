@@ -3576,6 +3576,14 @@ body._touch .header .menu__list > li._active.menu-item-has-children::after {
   z-index: 1;
 }
 
+.quantity-with-icon a {
+  outline: none;
+}
+
+.quantity-with-icon a:not(.icon) {
+  display: none;
+}
+
 .quantity-with-icon img {
   display: block;
   height: 14px;
